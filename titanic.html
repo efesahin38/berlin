@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berlin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <ul>
+        <li><a href="#">Berlin</a></li>
+  </ul>
+    </div>
+    <div class="sag">
+    <ul>
+      <li><a href="Berlin.html">Home Page</a></li>
+      <li><a href="places.html">Places to visit</a></li>
+      <li><a href="Hotels.html">Hotels</a></li>
+    </ul>
+  </div>
+  </nav>
+  <div class="titanic1">
+    <h1>Titanic Gendarmenmarkt Berlin</h1>
+  </div>
+  <div class="gallery-box">
+    <div class="gallery">
+        
+        <img src="titanic/lobby.jpg" alt="">
+        <img src="titanic/lobby1.jpg" alt="">
+        <img src="titanic/lobby2.jpg" alt="">
+        <img src="titanic/lobby33.jpg" alt="">
+        <img src="titanic/bedroom.jpg" alt="">
+        <img src="titanic/bedroom1.2.jpg" alt="">
+        <img src="titanic/bedroom2.jpg" alt="">
+        <img src="titanic/bedroom2.1.jpg" alt="">
+        <img src="titanic/bathroom1.jpg" alt="">
+    </div>
+  </div>
+  <script>
+    var indexValue = 0;
+    function slideShow() {
+      setTimeout(slideShow, 2500);
+      var x;
+      const img = document.querySelectorAll("img");
+      for(x = 0; x < img.length; x++) {
+        img[x].style.display = "none";
+      }
+      indexValue++;
+      if(indexValue > img.length) {
+        indexValue = 1;
+      }
+      img[indexValue - 1].style.display = "block";
+    }
+    slideShow();
+</script>
+<div class="information-box">
+    <h1>Welcome to Titanic Gendarmenmarkt Berlin </h1>
+    <hr>
+    <p> This luxurious hotel features a grill restaurant and a spa with an authentic Turkish hammam/steam room. Titanic Gendarmenmarkt is located in the heart of Berlin, just 200 meters from the elegant Gendarmenmarkt. All rooms at the Titanic Gendarmenmarkt Berlin are air-conditioned and beautifully furnished. A rich breakfast buffet is served every morning at the hotel. In the Beef Grill Club by Hasir with show kitchen, meals are prepared in front of you. Meeting facilities, luggage storage and dry cleaning are also available at the hotel. Titanic Gendarmenmarkt Berlin is a 5-minute walk from the lively Friedrichstrasse and the famous Unter den Linden boulevard. The nearby Hausvogteiplatz and Museumsinsel subway stations offer excellent transport connections to all of Berlin</p>
+    <h1>Most popular amenities</h1>
+    <hr>
+    </div>
+    <div class="facilities-container">
+        
+        <div class="facility">
+            <i class="fas fa-swimming-pool icon"></i>
+            <p>Indoor Swimming Pool</p>
+        </div>
+        <div class="facility">
+            <i class="fas fa-parking icon"></i>
+            <p>On-site Parking</p>
+        </div>
+        <div class="facility">
+            <i class="fas fa-wifi icon"></i>
+            <p>Free Wi-Fi</p>
+        </div>
+        <div class="facility">
+            <i class="fas fa-spa icon"></i>
+            <p>Spa and Wellness Center</p>
+        </div>
+        <div class="facility">
+            <i class="fa-solid fa-people-roof"></i>
+            <p>Family Rooms</p>
+        </div>
+        <div class="facility">
+            <i class="fas fa-dumbbell icon"></i>
+            <p>Fitness Center</p>
+        </div>
+        <div class="facility">
+            <i class="fas fa-plane-departure icon"></i>
+            <p>Airport Shuttle</p>
+        </div>
+        <div class="facility">
+            <i class="fas fa-utensils icon"></i>
+            <p>Restaurant</p>
+        </div>
+        <div class="facility">
+            <i class="fas fa-glass-whiskey icon"></i>
+            <p>Bar</p>
+        </div>
+        <div class="facility">
+            <i class="fas fa-coffee icon"></i>
+            <p>Delicious Breakfast</p>
+            
+        </div>
+    </div>
+    <div class="loca">
+        <h1>Location</h1>
+        <hr>
+    </div>
+    <div class="navi-jw">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.020457989082!2d13.391919676927158!3d52.51496883660179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851dbb0de2075%3A0x8314015c1ec11ace!2sTitanic%20Gendarmenmarkt%20Berlin!5e0!3m2!1str!2sde!4v1709244194093!5m2!1str!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    

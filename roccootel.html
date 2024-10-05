@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berlin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <ul>
+        <li><a href="#">Berlin</a></li>
+  </ul>
+    </div>
+    <div class="sag">
+    <ul>
+      <li><a href="Berlin.html">Home Page</a></li>
+      <li><a href="places.html">Places to visit</a></li>
+      <li><a href="Hotels.html">Hotels</a></li>
+    </ul>
+  </div>
+  </nav>
+  <div class="name">
+    <h1>Rocco Forte Otel De Roma</h1>
+  </div>
+  <div class="gallery-box">
+  <div class="gallery">
+    <img src="hotelphotos/bedroom.jpg" alt="" >
+    <img src="hotelphotos/bathroom.jpg" alt="" >
+    <img src="hotelphotos/bedroom2.jpg" alt="" >
+    <img src="hotelphotos/bathroom2.jpg" alt="">
+    <img src="hotelphotos/lobby.jpg" alt="" >
+    <img src="hotelphotos/bedroom3.jpg" alt="" >
+    <img src="hotelphotos/bathroom3.jpg" alt="" >
+    <img src="hotelphotos/lobby2.jpg" alt="" >
+    <img src="hotelphotos/bedroom4.jpg" alt="">
+    <img src="hotelphotos/bedroom4.1.jpg"alt="">
+    <img src="hotelphotos/bedroom5.jpg"alt="" >
+    <img src="hotelphotos/bedroom5.1.jpg" alt="" >
+    <img src="hotelphotos/Pool.jpg" alt="" >
+    <img src="hotelphotos/kitchen.jpg" alt="" >
+    <img src="hotelphotos/kitchen2.jpg" alt="" >
+    <img src="hotelphotos/bar.jpg"alt="" >
+    <img src="hotelphotos/bar2.jpg"alt="" >
+    <img src="hotelphotos/view.jpg" alt="" >
+    
+</div>
+</div>
+
+<script>
+    var indexValue = 0;
+    function slideShow() {
+      setTimeout(slideShow, 2500);
+      var x;
+      const img = document.querySelectorAll("img");
+      for(x = 0; x < img.length; x++) {
+        img[x].style.display = "none";
+      }
+      indexValue++;
+      if(indexValue > img.length) {
+        indexValue = 1;
+      }
+      img[indexValue - 1].style.display = "block";
+    }
+    slideShow();
+</script>
+<div class="information-box">
+    <h1>Feel like a VIP with the first-class service of Rocco Forte Hotel De Rome</h1>
+    <hr>
+    <p>Located on Bebelplatz in Berlin, this 5-star hotel offers gourmet cuisine and a luxury spa. The historic Unter den Linden Boulevard is just 150 meters away.The elegant and soundproofed rooms of Rocco Forte Hotel De Rome feature high ceilings and high-speed internet access. The marble bathrooms include heated mosaic floors and bidets. Authentic Italian specialties are served à la carte at the CHIARO restaurant. On the 5th floor, there is a rooftop terrace with panoramic views of Bebelplatz and the Berlin city center. Enjoy afternoon tea in the original plaster ceilinged Opera Court. Drinks are served in the Velvet Room or at the Bebel Bar overlooking Bebelplatz and the Berlin State Opera.</p>
+    
+    <h1>Most popular amenities</h1>
+    <hr>
+</div>
+<div class="facilities-container">
+    <div class="facility">
+        <i class="fas fa-swimming-pool icon"></i>
+        <p>Indoor Swimming Pool</p>
+    </div>
+    <div class="facility">
+        <i class="fas fa-parking icon"></i>
+        <p>On-site Parking</p>
+    </div>
+    <div class="facility">
+        <i class="fas fa-wifi icon"></i>
+        <p>Free Wi-Fi</p>
+    </div>
+    <div class="facility">
+        <i class="fas fa-spa icon"></i>
+        <p>Spa and Wellness Center</p>
+    </div>
+    <div class="facility">
+        <i class="fas fa-smoking-ban icon"></i>
+        <p>Non-Smoking Rooms</p>
+    </div>
+    <div class="facility">
+        <i class="fas fa-dumbbell icon"></i>
+        <p>Fitness Center</p>
+    </div>
+    <div class="facility">
+        <i class="fas fa-plane-departure icon"></i>
+        <p>Airport Shuttle</p>
+    </div>
+    <div class="facility">
+        <i class="fas fa-utensils icon"></i>
+        <p>Restaurant</p>
+    </div>
+    <div class="facility">
+        <i class="fas fa-glass-whiskey icon"></i>
+        <p>Bar</p>
+    </div>
+    <div class="facility">
+        <i class="fas fa-coffee icon"></i>
+        <p>Delicious Breakfast</p>
+    </div>
+</div>
+<div class="loca">
+  <h1>Location</h1>
+  <hr>
+<div class="navi-jw">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.9733308735667!2d13.39182828666143!3d52.515821709274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851db960e0eb1%3A0x6ce7f513876203dd!2sHotel%20de%20Rome%2C%20a%20Rocco%20Forte%20Hotel!5e0!3m2!1str!2sde!4v1708819042250!5m2!1str!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>

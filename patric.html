@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berlin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <ul>
+        <li><a href="#">Berlin</a></li>
+  </ul>
+    </div>
+    <div class="sag">
+    <ul>
+      <li><a href="Berlin.html">Home Page</a></li>
+      <li><a href="places.html">Places to visit</a></li>
+      <li><a href="Hotels.html">Hotels</a></li>
+    </ul>
+  </div>
+  </nav>
+  <div class="hotel-name">
+    <h1>Schlosshotel Berlin by Patrick Hellmann</h1>
+  </div>
+  <div class="gallery-box">
+    <div class="gallery">
+        <img src="patric/bedroom.jpg"  alt="">
+        <img src="patric/bedroom2.jpg" alt="">
+        <img src="patric/bathroom.jpg" alt="">
+        <img src="patric/bedroom3.jpg" alt="">
+        <img src="patric/coridor.jpg" alt="">
+        <img src="patric/pool.jpg" alt="">
+        <img src="patric/pool1.2.jpg" alt="">
+        <img src="patric/bar.jpg" alt="">
+        <img src="patric/teras.jpg" alt="">
+    </div>
+  </div>
+  <script>
+    var indexValue = 0;
+    function slideShow() {
+      setTimeout(slideShow, 2500);
+      var x;
+      const img = document.querySelectorAll("img");
+      for(x = 0; x < img.length; x++) {
+        img[x].style.display = "none";
+      }
+      indexValue++;
+      if(indexValue > img.length) {
+        indexValue = 1;
+      }
+      img[indexValue - 1].style.display = "block";
+    }
+    slideShow();
+</script>
+<div class="information-box">
+    <h1>You'll feel like a celebrity with the first-class service at Schlosshotel Berlin by Patrick Hellmann</h1>
+    <hr>
+    <p>
+         Schlosshotel Berlin by Patrick Hellmann is a private luxury hotel in Berlin’s stylish green district of Grunewald. The historic villa, park-like garden, valuable furnishings and personal service offer unique accommodation.
+ 
+         Incorporating design features by Karl Lagerfeld and Patrick Hellmann, the hotel provides a wonderful getaway for Berlin visitors. Highlights include the bright conservatory, splendid restaurant, the bar salon, upholstered furnishings, a beautiful lobby and a photo art exhibition.
+
+         The hotel also features an indoor pool with access to the separate garden with sun loungers, as well as event spaces in the heritage-listed interior. Not far from the legendary Kurfürstendamm - a magnet for international designer boutiques, café culture and financial institutes – the luxury hotel is also imbued with the tranquility of an established villa district.
+
+         Schlosshotel Berlin by Patrick Hellmann is just 10 minutes from the world-famous Kurfürstendamm shopping boulevard and the Berlin Trade Fair, and 25 minutes from Schönefeld Airport. All of Berlin’s sights can be explored using the hotel shuttle service.
+
+         Fashion and glamour is provided by the Patrick Hellmann design combining the historic building with upscale lifestyle. Rooms and bathrooms feature the finest fabrics and bespoke furniture with Lalique applications. The fitness rooms boast state-of-the-art equipment while guests can enjoy the large pool and healthy post-workout fare at the pool bar. The romantic garden pavilion and floral arrangements also provide a perfect wedding venue
+    </p>
+    <h1>Most popular amenities</h1>
+    <hr>
+</div>
+<div class="facilities-container-patric">
+    <div class="facility">
+        <i class="fas fa-swimming-pool icon"></i>
+        <p>Indoor Swimming Pool</p>
+    </div>
+    <div class="facility">
+        <i class="fas fa-parking icon"></i>
+        <p>On-site Parking</p>
+    </div>
+    <div class="facility">
+        <i class="fas fa-wifi icon"></i>
+        <p>Free Wi-Fi</p>
+    </div>
+    <div class="facility">
+        <i class="fas fa-spa icon"></i>
+        <p>Spa and Wellness Center</p>
+    </div>
+    <div class="facility">
+        <i class="fas fa-smoking-ban icon"></i>
+        <p>Non-Smoking Rooms</p>
+    </div>
+    <div class="facility">
+        <i class="fas fa-dumbbell icon"></i>
+        <p>Fitness Center</p>
+    </div>
+    <div class="facility">
+        <i class="fas fa-plane-departure icon"></i>
+        <p>Airport Shuttle</p>
+    </div>
+    <div class="facility">
+        <i class="fas fa-utensils icon"></i>
+        <p>Restaurant</p>
+    </div>
+    <div class="facility">
+        <i class="fas fa-glass-whiskey icon"></i>
+        <p>Bar</p>
+    </div>
+</div>
+<div class="loca-patric">
+    <h1>Location</h1>
+    <hr>
+  <div class="navi-jw">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.9265857674577!2d13.27188667692042!3d52.4804649391556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84ddace1497a3%3A0xa54f1562188c3127!2sSchlosshotel%20Berlin%20by%20Patrick%20Hellmann!5e0!3m2!1str!2sde!4v1708859729960!5m2!1str!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  

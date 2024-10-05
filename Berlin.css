@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  height: 100px;
+  background-color: rgb(41, 41, 40);
+  width: 100%;
+  top: 0;
+  box-shadow: 0px 0px 40px white;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.sag a {
+  color: wheat;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+li {
+  margin: 0 20px;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: wheat;
+}
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(41, 41, 40, 0.3);
+  font-family: Arial, sans-serif;
+}
+
+.gallery-box {
+  margin-top: 130px;
+  padding: 0 20px;
+  width: calc(100% - 40px);
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: auto; /* Sabit yükseklik yerine otomatik */
+}
+
+.gallery {
+  height: 100%;
+  width: 100%;
+}
+
+.gallery img {
+  border-radius: 30px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  float: left;
+}
+.information-box {
+  width: calc(100% - 40px);
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  position: relative;
+}
+
+.history {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: calc(100% - 40px);
+  max-width: 1110px;
+}
+
+.history h1 {
+  font-size: 20px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    position: relative;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sag a {
+    font-size: 20px;
+  }
+
+  .logo a {
+    font-size: 20px;
+    margin-left: 0; /* Sol boşluk kaldırıldı */
+  }
+}
+
+/* 576px ve altı ekranlar için */
+@media (max-width: 576px) {
+  nav {
+    height: auto;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sag a {
+    font-size: 20px;
+  }
+
+  .logo a {
+    font-size: 20px;
+    margin-left: 0; /* Sol boşluk kaldırıldı */
+  }
+  .gallery-box{
+    margin-top: 30px;
+  }
+}
+
+/* 480px ve altı ekranlar için */
+@media (max-width: 480px) {
+  nav {
+    height: auto;
+    padding: 10px;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery-box{
+    margin-top: 30px;
+  }
+ 
+
+  .sag a {
+    font-size: 20px;
+  }
+
+  .logo a {
+    font-size: 20px;
+    text-align: center;
+  }
+}

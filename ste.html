@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berlin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <ul>
+        <li><a href="#">Berlin</a></li>
+  </ul>
+    </div>
+    <div class="sag">
+    <ul>
+      <li><a href="Berlin.html">Home Page</a></li>
+      <li><a href="places.html">Places to visit</a></li>
+      <li><a href="Hotels.html">Hotels</a></li>
+    </ul>
+  </div>
+  </nav>
+  <div class="hotel-name">
+    <h1>Steigenberger Hotel Am Chancellery</h1>
+  </div>
+  <div class="gallery-box">
+    <div class="gallery">
+        
+        <img src="Steıgen/bd.jpg" alt="">
+        <img src="Steıgen/bd1.jpg" alt="">
+        <img src="Steıgen/bd2.jpg"alt="">
+        <img src="Steıgen/bd2.1.jpg" alt="">
+        <img src="Steıgen/bf.jpg" alt="">
+        <img src="Steıgen/bf2.jpg" alt="">
+        <img src="Steıgen/kt.jpg" alt="">
+        <img src="Steıgen/br.jpg" alt="">
+        <img src="Steıgen/lby.jpg" alt="">
+        <img src="Steıgen/lby1.jpg" alt="">
+    </div>
+  </div>
+  <script>
+    var indexValue = 0;
+    function slideShow() {
+      setTimeout(slideShow, 2500);
+      var x;
+      const img = document.querySelectorAll("img");
+      for(x = 0; x < img.length; x++) {
+        img[x].style.display = "none";
+      }
+      indexValue++;
+      if(indexValue > img.length) {
+        indexValue = 1;
+      }
+      img[indexValue - 1].style.display = "block";
+    }
+    slideShow();
+</script>
+<div class="information-box">
+    <h1>Welcome to Steigenberger Hotel Am Chancellery </h1>
+    <hr>
+    <p>Just 800 meters from the Brandenburg Gate, the Steigenberger Hotel Am Kanzleramt is right next to the German Parliament buildings in Berlin. WiFi is available free of charge. Each air-conditioned room at the Steigenberger Hotel Am Kanzleramt features a minibar, tea/coffee making facilities and a flat-screen TV. The private bathroom includes bathrobes and slippers. The rooms are modernly designed. Facilities at the Steigenberger Hotel Am Kanzleramt include a 24-hour reception, a bar and a restaurant. The hotel also offers ticket service and luggage storage. Alexanderplatz is 3 km from the hotel, Kurfürstendamm is 4 km away and Potsdamer Platz is a 25-minute walk away. Berlin Central Station is right next to the hotel and Berlin-Schönefeld Airport is 25 km away.</p>
+    <h1>Most popular amenities</h1>
+    <hr>
+    </div>
+    <div class="facilities-container">
+        
+        <div class="facility">
+            <i class="fas fa-swimming-pool icon"></i>
+            <p>Indoor Swimming Pool</p>
+        </div>
+        <div class="facility">
+            <i class="fas fa-parking icon"></i>
+            <p>On-site Parking</p>
+        </div>
+        <div class="facility">
+            <i class="fas fa-wifi icon"></i>
+            <p>Free Wi-Fi</p>
+        </div>
+        <div class="facility">
+            <i class="fas fa-spa icon"></i>
+            <p>Spa and Wellness Center</p>
+        </div>
+        <div class="facility">
+            <i class="fa-solid fa-people-roof"></i>
+            <p>Family Rooms</p>
+        </div>
+        <div class="facility">
+            <i class="fas fa-dumbbell icon"></i>
+            <p>Fitness Center</p>
+        </div>
+        <div class="facility">
+            <i class="fas fa-plane-departure icon"></i>
+            <p>Airport Shuttle</p>
+        </div>
+        <div class="facility">
+            <i class="fas fa-utensils icon"></i>
+            <p>Restaurant</p>
+        </div>
+        <div class="facility">
+            <i class="fas fa-glass-whiskey icon"></i>
+            <p>Bar</p>
+        </div>
+        <div class="facility">
+            <i class="fas fa-coffee icon"></i>
+            <p>Delicious Breakfast</p>
+            
+        </div>
+    </div>
+    <div class="loca">
+        <h1>Location</h1>
+        <hr>
+    </div>
+    <div class="navi-jw">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d721.7120641982303!2d13.367693429533524!3d52.523657021049395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851bdc506bc8b%3A0xa1921566960690b!2sSteigenberger%20Hotel%20am%20Kanzleramt!5e0!3m2!1str!2sde!4v1709245931719!5m2!1str!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    

@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+    
+}
+
+body {
+    background-color: rgba(41, 41, 40, 0.3);
+}
+
+nav {
+    height: 100px;
+    background-color: rgb(41, 41, 40);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 0px 40px white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: wheat;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.sag a {
+    color: wheat;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+li {
+    margin: 0 20px;
+}
+
+.name h1, .jwh h1, .hotel-name h1, .titanic1 h1 {
+    font-size: 50px;
+    position: absolute;
+    top: 125px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.gallery-box {
+    margin: 200px auto 0 auto;
+    width: 90%;
+    max-width: 1100px;
+    height: auto;
+    position: relative;
+}
+.gallery {
+    height: 100%;
+    width: 100%;
+}
+
+.gallery img {
+    border-radius: 30px;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Görüntüyü kutu içine sığdırır, taşmayı engeller */
+    max-height: 400px; /* Tüm fotoğraflar için maksimum yüksekliği sabitler */
+}
+
+.information-box, .facilities-container, .loca, .navi-jw, .facilities-container-patric, .loca-patric {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.facilities-container, .facilities-container-patric {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.facility {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.facility p {
+    margin: 0;
+}
+
+.navi, .navi-patric {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Responsive Design */
+
+/* 1200px ve altı ekranlar için */
+@media (max-width: 1200px) {
+    .gallery-box, .information-box, .loca, .navi-jw, .facilities-container, .facilities-container-patric, .loca-patric {
+        width: 100%;
+    }
+
+    .sag a {
+        font-size: 20px;
+        
+    }
+
+    .logo a {
+        font-size: 20px;
+       
+        
+    }
+}
+
+/* 768px ve altı ekranlar için */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+
+    .sag a {
+        font-size: 20px;
+    }
+
+    .name h1, .jwh h1, .hotel-name h1, .titanic1 h1 {
+        font-size: 40px;
+        top: 100px;
+        text-align: center;
+    }
+
+    .gallery-box, .information-box, .loca, .navi-jw, .facilities-container, .facilities-container-patric, .loca-patric {
+        width: 100%;
+    }
+
+    .facility {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* 576px ve altı ekranlar için */
+@media (max-width: 576px) {
+    .logo a {
+        font-size: 20px;
+    }
+    
+    .sag a {
+        font-size: 20px;
+    }
+
+    nav {
+        padding: 10px;
+        
+    }
+
+    .name h1, .jwh h1, .hotel-name h1, .titanic1 h1 {
+        font-size: 23px;
+        top: 140px;
+        text-align: center;
+    }
+
+    .gallery-box, .information-box, .loca, .navi-jw, .facilities-container, .facilities-container-patric, .loca-patric {
+        width: 100%;
+    }
+
+    .facility {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .icon {
+        margin-right: 0;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+        max-height: 300px; /* Daha küçük ekranlarda maksimum yüksekliği ayarla */
+        object-fit: cover; /* Görüntüyü her boyutta kutuya sığdır */
+    }
+}

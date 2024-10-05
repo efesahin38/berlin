@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  background-color: rgba(41, 41, 40, 0.3);
+}
+
+nav {
+  height: 100px;
+  background-color: rgb(41, 41, 40);
+  width: 100%;
+  top: 0;
+  box-shadow: 0px 0px 40px white;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.sag a {
+  color: wheat;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+li {
+  margin: 0 20px;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: wheat;
+}
+
+.kutu, .jw, .patricp, .titanicp, .step, .hp {
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 150px auto 20px auto;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  position: relative;
+  text-align: center;
+  background-color: rgb(61, 58, 58,0.4);
+}
+
+.kutu img, .jw img, .patricp img, .titanicp img, .step img, .hp img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.h1 h1, .bg h1, .h2 h1, .ax h1, .h3 h1, .h4 h1, .h5 h1, .h6 h1 {
+  font-size: 2rem;
+  position: absolute;
+  margin-left: 800px;
+  margin-top: 80px;
+  
+  
+}
+
+.roccob button, .jwb button, .patric button, .titanic button, .ste button, .hpe button {
+  width: 90%;
+  max-width: 250px;
+  height: 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px red;
+  margin: 20px auto;
+  display: block;
+ 
+}
+
+/* Responsive Design */
+
+/* 1200px ve altı ekranlar için */
+@media (max-width: 1200px) {
+  .kutu, .jw, .patricp, .titanicp, .step, .hp {
+    max-width: 90%;
+  }
+
+  .sag a {
+    font-size: 20px;
+  }
+
+  .logo a {
+    font-size: 20px;
+  }
+}
+
+/* 768px ve altı ekranlar için */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    position: relative;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sag a {
+    font-size: 20px;
+  }
+
+  .logo a {
+    font-size: 20px;
+  }
+  
+  .kutu, .jw, .patricp, .titanicp, .step, .hp {
+    width: 80%;
+    margin: 50px auto 20px auto;
+  }
+
+  .h1 h1, .bg h1, .h2 h1, .ax h1, .h3 h1, .h4 h1, .h5 h1, .h6 h1 {
+    font-size: 2rem;
+  }
+
+  .roccob button, .jwb button, .patric button, .titanic button, .ste button, .hpe button {
+    width: 80%;
+    max-width: 200px;
+    height: 45px;
+  }
+}
+
+/* 576px ve altı ekranlar için */
+@media (max-width: 576px) {
+  .logo a {
+    font-size: 20px;
+
+  }
+
+  .sag a {
+    font-size: 20px;
+    
+  }
+
+  nav {
+    padding: 10px;
+  }
+  
+  .kutu, .jw, .patricp, .titanicp, .step, .hp {
+    width: 100%;
+    margin: 50px auto 20px auto;
+    
+  }
+
+  .h1 h1, .bg h1, .h2 h1, .ax h1, .h3 h1, .h4 h1, .h5 h1, .h6 h1 {
+    font-size: 1.2rem;
+    
+  }
+
+  .roccob button, .jwb button, .patric button, .titanic button, .ste button, .hpe button {
+    width: 100%;
+    max-width: 180px;
+    height: 40px;
+  }
+}
